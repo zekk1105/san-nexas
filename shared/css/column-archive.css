@@ -1,0 +1,159 @@
+/*--------------------------------------
+    sec1
+--------------------------------------*/
+#sec1 {
+  padding: 48px 0;
+}
+
+/*--------------------------------------
+    sec2
+--------------------------------------*/
+#sec2 #main {
+  padding: 68px 25px;
+}
+#sec2 #main h2 {
+  letter-spacing: 0.05em;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+#sec2 #main .item {
+  margin-bottom: 31px;
+}
+#sec2 #main .item .note {
+  color: #000;
+}
+#sec2 #main .item .tags p {
+  background: var(--blue);
+}
+#sec2 #main #pagination {
+  margin: 84px 22px 0;
+}
+
+/*--------------------------------------
+    PC
+--------------------------------------*/
+@media screen and (min-width: 768px) {
+  /*--------------------------------------
+        sec1
+    --------------------------------------*/
+  #sec1 {
+    padding: 70px 0;
+  }
+  #sec1 .ttl-common + .f800 {
+    margin-left: 0;
+  }
+  /*--------------------------------------
+        sec2
+    --------------------------------------*/
+  #sec2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    max-width: 1072px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 199px 0 364px;
+    position: relative;
+  }
+  #sec2 #main {
+    padding: 0;
+    width: 762px;
+  }
+  #sec2 #main .wrap {
+    width: 100%;
+    position: static;
+  }
+  #sec2 #main h2 {
+    font-size: 43px;
+    margin-bottom: 75px;
+  }
+  #sec2 #main .c-row2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  #sec2 #main .c-row2 .item {
+    width: 242px;
+    margin-bottom: 40px;
+  }
+  #sec2 #main .c-row2 .item .note {
+    margin-top: 18px;
+  }
+  #sec2 #main #pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin: 99px 0 0 5px;
+    gap: 36px;
+  }
+  #sec2 #main #pagination a {
+    position: relative;
+  }
+  #sec2 #main #pagination a:nth-child(1) {
+    margin-left: -8px;
+    margin-right: 7px;
+  }
+  #sec2 #main #pagination a:last-child {
+    margin-left: 3px;
+    margin-right: -3px;
+  }
+  #sec2 #main #pagination a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background: var(--blue);
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  #sec2 #main #pagination a:has(img)::before {
+    display: none;
+  }
+  #sec2 #main #pagination a:hover {
+    color: #fff;
+  }
+  #sec2 #main #pagination a:hover:before {
+    opacity: 1;
+  }
+  #sec2 #side {
+    margin: -10px -31px 0 0;
+  }
+  #sec2 #side .item {
+    margin-bottom: 27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1160px) {
+  #sec2 {
+    margin: 0 20px;
+    width: auto;
+  }
+  #sec2 #main {
+    width: calc(100% - 310px);
+  }
+  #sec2 #main .c-row2 .item {
+    width: calc(33% - 9px);
+  }
+  #sec2 .c-row2 .item h3 {
+    font-size: 16px;
+  }
+  #sec2 #side {
+    margin-right: -10px;
+  }
+}
+
+/*# sourceMappingURL=column-archive.css.map */

@@ -1,0 +1,149 @@
+/*--------------------------------------
+  sec1
+--------------------------------------*/
+#sec1 {
+  padding: 48px 0;
+}
+
+#sec1 .decoration {
+  margin: 94px 25px 0;
+}
+#sec1 .set {
+  background: var(--blue);
+  border-radius: 20px;
+  padding: 46px 27px 42px 23px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#sec1 .set > h3 {
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+}
+#sec1 .set .ttl {
+  font-size: 17px;
+  margin: 8px 0 8px 2px;
+}
+#sec1 .set .item {
+  margin-bottom: 29px;
+}
+#sec1 .set .item .note {
+  color: #fff;
+}
+#sec1 .set .btn-cus {
+  margin-top: 56px;
+  text-align: center;
+}
+#sec1 .set .btn-cus a {
+  font-size: 14px;
+  padding: 0 45px;
+}
+#sec1 .set.set2 {
+  background: var(--yellow);
+}
+#sec1 .set.set2 .item .tags p {
+  background: var(--green);
+}
+#sec1 .set.set3 {
+  background: var(--green);
+}
+#sec1 .set.set3 .item .tags p {
+  background: var(--purple);
+}
+#sec1 .set.set4 {
+  background: var(--purple);
+}
+#sec1 .set.set5 {
+  background: #000;
+}
+#sec1 .set.set5 .item .tags p {
+  background: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+  #sec1 .set .item .note {
+    font-size: 15px;
+    margin-top: 22px;
+  }
+  #sec1 .set .item h3 {
+    font-size: 19px;
+  }
+  #sec1 .set .item .tags {
+    margin-top: 7px;
+  }
+  #sec1 .set .item .tags p {
+    height: 29.5px;
+    font-size: 13px;
+    padding: 0 27px;
+  }
+}
+/*--------------------------------------
+    PC
+  --------------------------------------*/
+@media screen and (min-width: 768px) {
+  /*--------------------------------------
+      sec1
+    --------------------------------------*/
+  #sec1 {
+    padding: 70px 0 173px;
+  }
+  #sec1 .ttl-common + .f800 {
+    margin-left: 0;
+  }
+
+  #sec1 .decoration {
+    width: 380px;
+    margin: 63px -10px -10px auto;
+  }
+  #sec1 .set {
+    position: relative;
+    z-index: 2;
+    margin: 0 -32px 0 -34px;
+    border-radius: 30px;
+    padding: 91px 57px 44px;
+    margin-bottom: 99px;
+  }
+  #sec1 .set > h3 {
+    font-size: 37px;
+  }
+  #sec1 .set .ttl {
+    font-size: 19px;
+    margin: 19px 0 19px 3px;
+  }
+  #sec1 .set .slider {
+    margin-left: 3px;
+    margin-right: 4px;
+  }
+  #sec1 .set .slider .slick-list {
+    padding-right: 130px;
+  }
+  #sec1 .set .slider .slick-arrow {
+    width: 48px;
+    height: 48px;
+    top: 124px;
+  }
+  #sec1 .set .slider .slick-arrow:hover {
+    opacity: 0.8;
+  }
+  #sec1 .set .slider .slick-prev {
+    left: -25px;
+  }
+  #sec1 .set .slider .slick-next {
+    right: -25px;
+  }
+  #sec1 .set .slider .item .note {
+    margin-top: 18px;
+  }
+  #sec1 .set .btn-cus {
+    position: absolute;
+    top: 127px;
+    margin: 0;
+    right: 60px;
+  }
+  #sec1 .set .btn-cus a {
+    height: 43px;
+    line-height: 44px;
+  }
+}
+
+/*# sourceMappingURL=company-details.css.map */

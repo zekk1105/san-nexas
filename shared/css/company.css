@@ -1,0 +1,330 @@
+/*--------------------------------------
+    sec1
+--------------------------------------*/
+#sec1 {
+  padding: 48px 0 77px;
+}
+#sec1 .ttl-common + .f800 {
+  font-size: 19px;
+  margin-top: 5px;
+}
+#sec1 .bg {
+  position: relative;
+}
+#sec1 .bg:before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 244px;
+  height: 133px;
+  background: url(../img/company/sec1_deco.png) no-repeat center top;
+  background-size: contain;
+  z-index: -1;
+}
+#sec1 .inner {
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 156px;
+  padding: 25px 26px 30px;
+}
+#sec1 .inner h3 {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 4px 0 20px;
+}
+#sec1 .inner .txt {
+  font-size: 14px;
+  line-height: 23px;
+  margin-right: 14px;
+  margin-bottom: 7px;
+}
+#sec1 .inner .buttons {
+  margin-top: 34px;
+  margin-left: -2px;
+  display: -webkit-flex;
+  margin-right: -5px;
+  display: -moz-flex;
+  display: -ms-flex;
+  gap: 4px;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+#sec1 .inner .buttons .btn-cus {
+  margin-bottom: 12px;
+}
+#sec1 .inner .buttons .btn-cus a {
+  padding: 0 45px;
+  font-size: 14px;
+}
+#sec1 .inner .buttons .btn-cus:nth-child(3) a {
+  padding: 0 60px;
+}
+
+/*--------------------------------------
+    sec2
+--------------------------------------*/
+#sec2 .bg {
+  background: var(--green);
+  color: #fff;
+  position: relative;
+  border-radius: 20px;
+  padding: 103px 26px 26px;
+}
+#sec2 .bg .deco {
+  position: absolute;
+  background: url(../img/shared/yl_ttl_deco.png) no-repeat center top;
+  width: 128px;
+  height: 128px;
+  color: #000;
+  font-size: 20px;
+  transform: rotate(-25deg);
+  line-height: 27px;
+  top: -37px;
+  left: -15px;
+}
+#sec2 .bg dl {
+  font-size: 19px;
+  line-height: 32px;
+  border-bottom: 1px solid;
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+}
+#sec2 .bg dl dt {
+  font-weight: 800;
+}
+#sec2 .bg dl dd {
+  margin-right: -20px;
+}
+#sec2 .bg .g-map {
+  margin-top: 17px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#sec2 .bg .g-map iframe {
+  width: 100%;
+  height: 210px;
+}
+
+/*--------------------------------------
+    sec3
+--------------------------------------*/
+#sec3 {
+  padding: 80px 0 137px;
+  position: relative;
+}
+#sec3:before {
+  content: '';
+  position: absolute;
+  bottom: 33px;
+  right: 15px;
+  width: 116px;
+  height: 146px;
+  background: url(../img/company/sec3_deco.png) no-repeat center top;
+  background-size: contain;
+  z-index: 2;
+}
+#sec3 h2 {
+  --gap: -8px;
+}
+#sec3 .row {
+  padding: 0 25px;
+  gap: 7px;
+}
+#sec3 .row .photo {
+  margin: 17px 0 12px;
+}
+#sec3 .row h3 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-right: -20px;
+}
+#sec3 .row p {
+  font-size: 13px;
+  color: #727272;
+  margin-top: -7px;
+}
+#sec3 .btn-cus {
+  margin-top: 66px;
+  text-align: center;
+}
+#sec3 .btn-cus a {
+  padding: 2px 31px;
+}
+
+/*--------------------------------------
+    PC
+--------------------------------------*/
+@media screen and (min-width: 768px) {
+  /*--------------------------------------
+        sec1
+    --------------------------------------*/
+  #sec1 {
+    padding: 116px 0 123px;
+  }
+  #sec1 .wrap {
+    max-width: 1065px;
+  }
+  #sec1 .ttl-common {
+    position: relative;
+    z-index: 2;
+  }
+  #sec1 .ttl-common + .f800 {
+    position: relative;
+    z-index: 2;
+    margin: 12px 0 0 0;
+  }
+  #sec1 .bg:before {
+    width: 254px;
+    height: 138px;
+    background-size: contain;
+    left: 189px;
+  }
+  #sec1 .inner {
+    margin-top: -60px;
+    border-radius: 30px;
+    padding: 80px 15px 67px;
+  }
+  #sec1 .inner .row {
+    width: 940px;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  #sec1 .inner .row .photo {
+    margin-right: -4px;
+  }
+  #sec1 .inner .row .content {
+    padding-top: 26px;
+  }
+  #sec1 .inner .row .content p.f800 {
+    font-size: 19px;
+  }
+  #sec1 .inner .row .content h3 {
+    font-size: 35px;
+    margin: 8px 0 30px;
+    letter-spacing: 0.05em;
+  }
+  #sec1 .inner .row .content .txt {
+    width: 380px;
+  }
+  #sec1 .inner .buttons {
+    width: 567px;
+    margin: -63px 0 0 44px;
+    gap: 11px;
+  }
+  #sec1 .inner .buttons .btn-cus:nth-child(5) {
+    display: none;
+  }
+  #sec1 .inner .buttons .btn-cus a {
+    padding: 2px 40px;
+  }
+  #sec1 .inner .buttons .btn-cus:nth-child(2) a {
+    padding: 2px 60px;
+  }
+  #sec1 .inner .buttons .btn-cus:nth-child(3) a {
+    padding: 2px 40px;
+  }
+  /*--------------------------------------
+    sec2
+  --------------------------------------*/
+  #sec2 .wrap {
+    max-width: 1064px;
+  }
+  #sec2 .bg {
+    border-radius: 30px;
+    padding: 53px 40px 40px 55px;
+  }
+  #sec2 .bg:before {
+    content: '';
+    position: absolute;
+    bottom: -108px;
+    right: -87px;
+    background: url(../img/company/sec2_deco.png) no-repeat center top;
+    width: 208px;
+    height: 174px;
+    background-size: contain;
+    z-index: 2;
+  }
+  #sec2 .bg .deco {
+    top: -58px;
+    font-size: 23px;
+    left: -47px;
+    line-height: 31px;
+  }
+  #sec2 .bg .row {
+    width: 947px;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 100%;
+  }
+  #sec2 .bg .row dl {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    width: 394px;
+    display: flex;
+    padding-bottom: 15px;
+  }
+  #sec2 .bg .row dl dt {
+    min-width: 120px;
+  }
+  #sec2 .bg .row .g-map {
+    margin-top: 0;
+    width: 446px;
+  }
+  #sec2 .bg .row .g-map iframe {
+    height: 314px;
+  }
+  /*--------------------------------------
+    sec3
+  --------------------------------------*/
+  #sec3 {
+    padding: 195px 0 217px;
+  }
+  #sec3:before {
+    background: url(../img/company/sec3_deco.png) no-repeat center top;
+    width: 200px;
+    height: 254px;
+    right: calc(50% - 360px);
+    bottom: 54px;
+  }
+  #sec3 .ttl-common + .f800 {
+    margin-left: 1px;
+  }
+  #sec3 .row {
+    padding: 0;
+    margin: 40px -4px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #sec3 .row .item {
+    width: calc(33% - 43px);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  #sec3 .row .item:hover h3 {
+    color: var(--blue);
+  }
+  #sec3 .btn-cus {
+    margin-top: 123px;
+  }
+  #sec3 .btn-cus a {
+    padding: 26px 77px;
+    font-size: 27px;
+    border-radius: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1065px) {
+  #sec1 .inner .buttons {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=company.css.map */
